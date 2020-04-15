@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		023240452447938A0022E3F2 /* StatusLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023240442447938A0022E3F2 /* StatusLabel.swift */; };
+		02324048244799CD0022E3F2 /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02324047244799CD0022E3F2 /* MotionManager.swift */; };
+		0232404A244799E50022E3F2 /* MotionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02324049244799E50022E3F2 /* MotionHandler.swift */; };
+		0232404C24479CA80022E3F2 /* ViewController + MotionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0232404B24479CA80022E3F2 /* ViewController + MotionHandler.swift */; };
 		02879F9924478A3900B05390 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02879F9824478A3900B05390 /* AppDelegate.swift */; };
 		02879F9B24478A3900B05390 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02879F9A24478A3900B05390 /* SceneDelegate.swift */; };
 		02879F9D24478A3900B05390 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02879F9C24478A3900B05390 /* ViewController.swift */; };
@@ -23,6 +26,9 @@
 
 /* Begin PBXFileReference section */
 		023240442447938A0022E3F2 /* StatusLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusLabel.swift; sourceTree = "<group>"; };
+		02324047244799CD0022E3F2 /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
+		02324049244799E50022E3F2 /* MotionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionHandler.swift; sourceTree = "<group>"; };
+		0232404B24479CA80022E3F2 /* ViewController + MotionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController + MotionHandler.swift"; sourceTree = "<group>"; };
 		02879F9524478A3900B05390 /* Nano4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nano4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02879F9824478A3900B05390 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02879F9A24478A3900B05390 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +55,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02324046244799BE0022E3F2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				02324047244799CD0022E3F2 /* MotionManager.swift */,
+				02324049244799E50022E3F2 /* MotionHandler.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		02879F8C24478A3900B05390 = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +84,7 @@
 		02879F9724478A3900B05390 /* Nano4 */ = {
 			isa = PBXGroup;
 			children = (
+				02324046244799BE0022E3F2 /* Model */,
 				02D4177A24479097000BC96A /* View */,
 				02D4177924479088000BC96A /* Controller */,
 				02879F9824478A3900B05390 /* AppDelegate.swift */,
@@ -96,6 +112,7 @@
 			children = (
 				02879F9C24478A3900B05390 /* ViewController.swift */,
 				02D4177B24479101000BC96A /* ViewController + MultipeerHandler.swift */,
+				0232404B24479CA80022E3F2 /* ViewController + MotionHandler.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -181,14 +198,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				02879F9D24478A3900B05390 /* ViewController.swift in Sources */,
+				02324048244799CD0022E3F2 /* MotionManager.swift in Sources */,
 				023240452447938A0022E3F2 /* StatusLabel.swift in Sources */,
 				02879FB024478B0300B05390 /* MultipeerHandler.swift in Sources */,
 				02879F9924478A3900B05390 /* AppDelegate.swift in Sources */,
+				0232404C24479CA80022E3F2 /* ViewController + MotionHandler.swift in Sources */,
 				02879F9B24478A3900B05390 /* SceneDelegate.swift in Sources */,
 				02D4177E244791DE000BC96A /* StringExtension.swift in Sources */,
 				02D4177C24479101000BC96A /* ViewController + MultipeerHandler.swift in Sources */,
 				02879FAE24478AE400B05390 /* MultipeerController.swift in Sources */,
 				02879FB224478B7500B05390 /* GlobalProperties.swift in Sources */,
+				0232404A244799E50022E3F2 /* MotionHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

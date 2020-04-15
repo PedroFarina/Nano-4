@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         MultipeerController.shared().delegate = self
+        MotionManager.shared().motionDelegate = self
     }
 
 
