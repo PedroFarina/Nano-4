@@ -13,6 +13,9 @@
 		02879FA024478A3900B05390 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02879F9E24478A3900B05390 /* Main.storyboard */; };
 		02879FA224478A3B00B05390 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02879FA124478A3B00B05390 /* Assets.xcassets */; };
 		02879FA524478A3B00B05390 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02879FA324478A3B00B05390 /* LaunchScreen.storyboard */; };
+		02879FAE24478AE400B05390 /* MultipeerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02879FAD24478AE400B05390 /* MultipeerController.swift */; };
+		02879FB024478B0300B05390 /* MultipeerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02879FAF24478B0300B05390 /* MultipeerHandler.swift */; };
+		02879FB224478B7500B05390 /* GlobalProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02879FB124478B7500B05390 /* GlobalProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		02879FA124478A3B00B05390 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02879FA424478A3B00B05390 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02879FA624478A3B00B05390 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02879FAD24478AE400B05390 /* MultipeerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipeerController.swift; sourceTree = "<group>"; };
+		02879FAF24478B0300B05390 /* MultipeerHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipeerHandler.swift; sourceTree = "<group>"; };
+		02879FB124478B7500B05390 /* GlobalProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalProperties.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +46,7 @@
 		02879F8C24478A3900B05390 = {
 			isa = PBXGroup;
 			children = (
+				02879FAC24478A4300B05390 /* Shared */,
 				02879F9724478A3900B05390 /* Nano4 */,
 				02879F9624478A3900B05390 /* Products */,
 			);
@@ -65,6 +72,16 @@
 				02879FA624478A3B00B05390 /* Info.plist */,
 			);
 			path = Nano4;
+			sourceTree = "<group>";
+		};
+		02879FAC24478A4300B05390 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				02879FB124478B7500B05390 /* GlobalProperties.swift */,
+				02879FAD24478AE400B05390 /* MultipeerController.swift */,
+				02879FAF24478B0300B05390 /* MultipeerHandler.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +156,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				02879F9D24478A3900B05390 /* ViewController.swift in Sources */,
+				02879FB024478B0300B05390 /* MultipeerHandler.swift in Sources */,
 				02879F9924478A3900B05390 /* AppDelegate.swift in Sources */,
 				02879F9B24478A3900B05390 /* SceneDelegate.swift in Sources */,
+				02879FAE24478AE400B05390 /* MultipeerController.swift in Sources */,
+				02879FB224478B7500B05390 /* GlobalProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
