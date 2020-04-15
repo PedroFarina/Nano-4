@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		023240452447938A0022E3F2 /* StatusLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023240442447938A0022E3F2 /* StatusLabel.swift */; };
 		02879F9924478A3900B05390 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02879F9824478A3900B05390 /* AppDelegate.swift */; };
 		02879F9B24478A3900B05390 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02879F9A24478A3900B05390 /* SceneDelegate.swift */; };
 		02879F9D24478A3900B05390 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02879F9C24478A3900B05390 /* ViewController.swift */; };
@@ -16,9 +17,12 @@
 		02879FAE24478AE400B05390 /* MultipeerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02879FAD24478AE400B05390 /* MultipeerController.swift */; };
 		02879FB024478B0300B05390 /* MultipeerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02879FAF24478B0300B05390 /* MultipeerHandler.swift */; };
 		02879FB224478B7500B05390 /* GlobalProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02879FB124478B7500B05390 /* GlobalProperties.swift */; };
+		02D4177C24479101000BC96A /* ViewController + MultipeerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D4177B24479101000BC96A /* ViewController + MultipeerHandler.swift */; };
+		02D4177E244791DE000BC96A /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D4177D244791DE000BC96A /* StringExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		023240442447938A0022E3F2 /* StatusLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusLabel.swift; sourceTree = "<group>"; };
 		02879F9524478A3900B05390 /* Nano4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nano4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02879F9824478A3900B05390 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02879F9A24478A3900B05390 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +34,8 @@
 		02879FAD24478AE400B05390 /* MultipeerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipeerController.swift; sourceTree = "<group>"; };
 		02879FAF24478B0300B05390 /* MultipeerHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipeerHandler.swift; sourceTree = "<group>"; };
 		02879FB124478B7500B05390 /* GlobalProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalProperties.swift; sourceTree = "<group>"; };
+		02D4177B24479101000BC96A /* ViewController + MultipeerHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController + MultipeerHandler.swift"; sourceTree = "<group>"; };
+		02D4177D244791DE000BC96A /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,7 @@
 				02879FB124478B7500B05390 /* GlobalProperties.swift */,
 				02879FAD24478AE400B05390 /* MultipeerController.swift */,
 				02879FAF24478B0300B05390 /* MultipeerHandler.swift */,
+				02D4177D244791DE000BC96A /* StringExtension.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -88,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				02879F9C24478A3900B05390 /* ViewController.swift */,
+				02D4177B24479101000BC96A /* ViewController + MultipeerHandler.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -96,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				02879F9E24478A3900B05390 /* Main.storyboard */,
+				023240442447938A0022E3F2 /* StatusLabel.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -172,9 +181,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				02879F9D24478A3900B05390 /* ViewController.swift in Sources */,
+				023240452447938A0022E3F2 /* StatusLabel.swift in Sources */,
 				02879FB024478B0300B05390 /* MultipeerHandler.swift in Sources */,
 				02879F9924478A3900B05390 /* AppDelegate.swift in Sources */,
 				02879F9B24478A3900B05390 /* SceneDelegate.swift in Sources */,
+				02D4177E244791DE000BC96A /* StringExtension.swift in Sources */,
+				02D4177C24479101000BC96A /* ViewController + MultipeerHandler.swift in Sources */,
 				02879FAE24478AE400B05390 /* MultipeerController.swift in Sources */,
 				02879FB224478B7500B05390 /* GlobalProperties.swift in Sources */,
 			);

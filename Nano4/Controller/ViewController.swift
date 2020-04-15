@@ -9,9 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var lblStatus: StatusLabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        MultipeerController.shared().delegate = self
     }
 
 
