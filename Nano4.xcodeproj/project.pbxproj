@@ -63,10 +63,10 @@
 		02879F9724478A3900B05390 /* Nano4 */ = {
 			isa = PBXGroup;
 			children = (
+				02D4177A24479097000BC96A /* View */,
+				02D4177924479088000BC96A /* Controller */,
 				02879F9824478A3900B05390 /* AppDelegate.swift */,
 				02879F9A24478A3900B05390 /* SceneDelegate.swift */,
-				02879F9C24478A3900B05390 /* ViewController.swift */,
-				02879F9E24478A3900B05390 /* Main.storyboard */,
 				02879FA124478A3B00B05390 /* Assets.xcassets */,
 				02879FA324478A3B00B05390 /* LaunchScreen.storyboard */,
 				02879FA624478A3B00B05390 /* Info.plist */,
@@ -82,6 +82,22 @@
 				02879FAF24478B0300B05390 /* MultipeerHandler.swift */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		02D4177924479088000BC96A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				02879F9C24478A3900B05390 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		02D4177A24479097000BC96A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				02879F9E24478A3900B05390 /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
