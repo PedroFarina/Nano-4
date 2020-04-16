@@ -19,8 +19,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAi-Rm-rbJ" customClass="StatusLabel" customModule="Nano4TV" customModuleProvider="target">
-                                <rect key="frame" x="914" y="934" width="92" height="46"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAi-Rm-rbJ" customClass="StatusLabel" customModule="Nano4TV" customModuleProvider="target">
+                                <rect key="frame" x="914" y="949" width="92" height="46"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -29,7 +29,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hAi-Rm-rbJ" secondAttribute="bottom" constant="40" id="le1-4P-ZiW"/>
+                            <constraint firstItem="hAi-Rm-rbJ" firstAttribute="centerY" secondItem="wu6-TO-1qx" secondAttribute="centerY" multiplier="1.8" id="uH9-ZE-Mjb"/>
                             <constraint firstItem="hAi-Rm-rbJ" firstAttribute="centerX" secondItem="wu6-TO-1qx" secondAttribute="centerX" id="xno-Lt-BTg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wu6-TO-1qx"/>

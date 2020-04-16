@@ -36,6 +36,11 @@ public class MultipeerController: NSObject {
         #endif
         super.init()
         session.delegate = self
+        #if os(iOS)
+        browser.delegate = self
+        #else
+        advertiser.delegate = self
+        #endif
     }
 
     public let serviceType: String
