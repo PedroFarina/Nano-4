@@ -11,6 +11,16 @@
 		02324048244799CD0022E3F2 /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02324047244799CD0022E3F2 /* MotionManager.swift */; };
 		0232404A244799E50022E3F2 /* MotionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02324049244799E50022E3F2 /* MotionHandler.swift */; };
 		0232404C24479CA80022E3F2 /* ViewController + MotionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0232404B24479CA80022E3F2 /* ViewController + MotionHandler.swift */; };
+		0252BF752448CFF70043DD0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0252BF742448CFF70043DD0E /* AppDelegate.swift */; };
+		0252BF772448CFF70043DD0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0252BF762448CFF70043DD0E /* ViewController.swift */; };
+		0252BF7A2448CFF70043DD0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0252BF782448CFF70043DD0E /* Main.storyboard */; };
+		0252BF7C2448CFFC0043DD0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0252BF7B2448CFFC0043DD0E /* Assets.xcassets */; };
+		0252BF7F2448CFFC0043DD0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0252BF7D2448CFFC0043DD0E /* LaunchScreen.storyboard */; };
+		0252BF842448D0030043DD0E /* GlobalProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02879FB124478B7500B05390 /* GlobalProperties.swift */; };
+		0252BF852448D0030043DD0E /* MultipeerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02879FAD24478AE400B05390 /* MultipeerController.swift */; };
+		0252BF862448D0030043DD0E /* MultipeerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02879FAF24478B0300B05390 /* MultipeerHandler.swift */; };
+		0252BF872448D0030043DD0E /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D4177D244791DE000BC96A /* StringExtension.swift */; };
+		0252BF882448D0110043DD0E /* StatusLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023240442447938A0022E3F2 /* StatusLabel.swift */; };
 		02879F9924478A3900B05390 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02879F9824478A3900B05390 /* AppDelegate.swift */; };
 		02879F9B24478A3900B05390 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02879F9A24478A3900B05390 /* SceneDelegate.swift */; };
 		02879F9D24478A3900B05390 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02879F9C24478A3900B05390 /* ViewController.swift */; };
@@ -29,6 +39,13 @@
 		02324047244799CD0022E3F2 /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
 		02324049244799E50022E3F2 /* MotionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionHandler.swift; sourceTree = "<group>"; };
 		0232404B24479CA80022E3F2 /* ViewController + MotionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController + MotionHandler.swift"; sourceTree = "<group>"; };
+		0252BF722448CFF70043DD0E /* Nano4TV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nano4TV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0252BF742448CFF70043DD0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0252BF762448CFF70043DD0E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0252BF792448CFF70043DD0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0252BF7B2448CFFC0043DD0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0252BF7E2448CFFC0043DD0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0252BF802448CFFC0043DD0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02879F9524478A3900B05390 /* Nano4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nano4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02879F9824478A3900B05390 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02879F9A24478A3900B05390 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +62,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0252BF6F2448CFF70043DD0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		02879F9224478A3900B05390 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -64,11 +88,25 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		0252BF732448CFF70043DD0E /* Nano4TV */ = {
+			isa = PBXGroup;
+			children = (
+				0252BF742448CFF70043DD0E /* AppDelegate.swift */,
+				0252BF762448CFF70043DD0E /* ViewController.swift */,
+				0252BF782448CFF70043DD0E /* Main.storyboard */,
+				0252BF7B2448CFFC0043DD0E /* Assets.xcassets */,
+				0252BF7D2448CFFC0043DD0E /* LaunchScreen.storyboard */,
+				0252BF802448CFFC0043DD0E /* Info.plist */,
+			);
+			path = Nano4TV;
+			sourceTree = "<group>";
+		};
 		02879F8C24478A3900B05390 = {
 			isa = PBXGroup;
 			children = (
 				02879FAC24478A4300B05390 /* Shared */,
 				02879F9724478A3900B05390 /* Nano4 */,
+				0252BF732448CFF70043DD0E /* Nano4TV */,
 				02879F9624478A3900B05390 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -77,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				02879F9524478A3900B05390 /* Nano4.app */,
+				0252BF722448CFF70043DD0E /* Nano4TV.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,6 +138,7 @@
 		02879FAC24478A4300B05390 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				023240442447938A0022E3F2 /* StatusLabel.swift */,
 				02879FB124478B7500B05390 /* GlobalProperties.swift */,
 				02879FAD24478AE400B05390 /* MultipeerController.swift */,
 				02879FAF24478B0300B05390 /* MultipeerHandler.swift */,
@@ -121,7 +161,6 @@
 			isa = PBXGroup;
 			children = (
 				02879F9E24478A3900B05390 /* Main.storyboard */,
-				023240442447938A0022E3F2 /* StatusLabel.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -129,6 +168,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0252BF712448CFF70043DD0E /* Nano4TV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0252BF832448CFFC0043DD0E /* Build configuration list for PBXNativeTarget "Nano4TV" */;
+			buildPhases = (
+				0252BF6E2448CFF70043DD0E /* Sources */,
+				0252BF6F2448CFF70043DD0E /* Frameworks */,
+				0252BF702448CFF70043DD0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Nano4TV;
+			productName = Nano4TV;
+			productReference = 0252BF722448CFF70043DD0E /* Nano4TV.app */;
+			productType = "com.apple.product-type.application";
+		};
 		02879F9424478A3900B05390 /* Nano4 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 02879FA924478A3B00B05390 /* Build configuration list for PBXNativeTarget "Nano4" */;
@@ -156,6 +212,9 @@
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "Pedro Giuliano Farina";
 				TargetAttributes = {
+					0252BF712448CFF70043DD0E = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
 					02879F9424478A3900B05390 = {
 						CreatedOnToolsVersion = 11.4;
 					};
@@ -175,11 +234,22 @@
 			projectRoot = "";
 			targets = (
 				02879F9424478A3900B05390 /* Nano4 */,
+				0252BF712448CFF70043DD0E /* Nano4TV */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0252BF702448CFF70043DD0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0252BF7F2448CFFC0043DD0E /* LaunchScreen.storyboard in Resources */,
+				0252BF7C2448CFFC0043DD0E /* Assets.xcassets in Resources */,
+				0252BF7A2448CFF70043DD0E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		02879F9324478A3900B05390 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -193,6 +263,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0252BF6E2448CFF70043DD0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0252BF772448CFF70043DD0E /* ViewController.swift in Sources */,
+				0252BF862448D0030043DD0E /* MultipeerHandler.swift in Sources */,
+				0252BF872448D0030043DD0E /* StringExtension.swift in Sources */,
+				0252BF752448CFF70043DD0E /* AppDelegate.swift in Sources */,
+				0252BF882448D0110043DD0E /* StatusLabel.swift in Sources */,
+				0252BF842448D0030043DD0E /* GlobalProperties.swift in Sources */,
+				0252BF852448D0030043DD0E /* MultipeerController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		02879F9124478A3900B05390 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -215,6 +299,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		0252BF782448CFF70043DD0E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0252BF792448CFF70043DD0E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0252BF7D2448CFFC0043DD0E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0252BF7E2448CFFC0043DD0E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		02879F9E24478A3900B05390 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -234,6 +334,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0252BF812448CFFC0043DD0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BVZY57RJZG;
+				INFOPLIST_FILE = Nano4TV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = PGF.Nano4TV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 13.4;
+			};
+			name = Debug;
+		};
+		0252BF822448CFFC0043DD0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BVZY57RJZG;
+				INFOPLIST_FILE = Nano4TV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = PGF.Nano4TV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 13.4;
+			};
+			name = Release;
+		};
 		02879FA724478A3B00B05390 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -387,6 +527,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0252BF832448CFFC0043DD0E /* Build configuration list for PBXNativeTarget "Nano4TV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0252BF812448CFFC0043DD0E /* Debug */,
+				0252BF822448CFFC0043DD0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		02879F9024478A3900B05390 /* Build configuration list for PBXProject "Nano4" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
