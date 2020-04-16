@@ -91,14 +91,30 @@
 		0252BF732448CFF70043DD0E /* Nano4TV */ = {
 			isa = PBXGroup;
 			children = (
+				0252BF892448D0C50043DD0E /* View */,
+				0252BF8A2448D0D00043DD0E /* Controller */,
 				0252BF742448CFF70043DD0E /* AppDelegate.swift */,
-				0252BF762448CFF70043DD0E /* ViewController.swift */,
-				0252BF782448CFF70043DD0E /* Main.storyboard */,
 				0252BF7B2448CFFC0043DD0E /* Assets.xcassets */,
 				0252BF7D2448CFFC0043DD0E /* LaunchScreen.storyboard */,
 				0252BF802448CFFC0043DD0E /* Info.plist */,
 			);
 			path = Nano4TV;
+			sourceTree = "<group>";
+		};
+		0252BF892448D0C50043DD0E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0252BF782448CFF70043DD0E /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0252BF8A2448D0D00043DD0E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0252BF762448CFF70043DD0E /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		02879F8C24478A3900B05390 = {
