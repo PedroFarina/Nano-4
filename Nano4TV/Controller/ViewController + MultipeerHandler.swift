@@ -11,6 +11,20 @@ import MultipeerConnectivity
 
 extension ViewController: MultipeerHandler {
     func peerReceivedInvitation(_ id: MCPeerID) -> Bool {
+        DispatchQueue.main.async {
+            self.lblStatus.showMessage(id.displayName + " is trying to join.".localized())
+        }
         return MultipeerController.shared().connectedPeers.isEmpty
+    }
+
+    func peerJoined(_ id: MCPeerID) {
+        DispatchQueue.main.async {
+            self.lblStatus.showMessage(id.displayName + " has connected.".localized())
+        }
+    }
+    func peerLeft(_ id: MCPeerID) {
+        DispatchQueue.main.async {
+            self.lblStatus.showMessage(id.displayName + " has disconnected.".localized())
+        }
     }
 }

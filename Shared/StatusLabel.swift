@@ -20,7 +20,7 @@ public class StatusLabel: UILabel {
     }
 
     func showMessage(_ message: String) {
-        showMessage(message, for: 1)
+        showMessage(message, for: 3)
     }
 
     func showMessage(_ message: String, for duration: TimeInterval) {
