@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import MultipeerConnectivity
 
 class ViewController: UIViewController {
     @IBOutlet weak var lblStatus: StatusLabel!
+    var host: MCPeerID?
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -27,4 +27,10 @@ extension ViewController: MultipeerHandler {
             self.lblStatus.showMessage(id.displayName + " has disconnected.".localized())
         }
     }
+
+    func receivedData(_ data: Data, from peerID: MCPeerID) {
+        let value = data.withUnsafeBytes {
+            $0.load(as: CMData.self)
+        }
+    }
 }

@@ -22,6 +22,8 @@
 		0252BF872448D0030043DD0E /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D4177D244791DE000BC96A /* StringExtension.swift */; };
 		0252BF882448D0110043DD0E /* StatusLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023240442447938A0022E3F2 /* StatusLabel.swift */; };
 		0252BF8C2448D0F90043DD0E /* ViewController + MultipeerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0252BF8B2448D0F90043DD0E /* ViewController + MultipeerHandler.swift */; };
+		0277CE1F2448E10700C01BDB /* CMData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0277CE1E2448E10700C01BDB /* CMData.swift */; };
+		0277CE202448E11500C01BDB /* CMData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0277CE1E2448E10700C01BDB /* CMData.swift */; };
 		02879F9924478A3900B05390 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02879F9824478A3900B05390 /* AppDelegate.swift */; };
 		02879F9B24478A3900B05390 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02879F9A24478A3900B05390 /* SceneDelegate.swift */; };
 		02879F9D24478A3900B05390 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02879F9C24478A3900B05390 /* ViewController.swift */; };
@@ -48,6 +50,7 @@
 		0252BF7E2448CFFC0043DD0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0252BF802448CFFC0043DD0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0252BF8B2448D0F90043DD0E /* ViewController + MultipeerHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController + MultipeerHandler.swift"; sourceTree = "<group>"; };
+		0277CE1E2448E10700C01BDB /* CMData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMData.swift; sourceTree = "<group>"; };
 		02879F9524478A3900B05390 /* Nano4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nano4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02879F9824478A3900B05390 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02879F9A24478A3900B05390 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -162,6 +165,7 @@
 				02879FAD24478AE400B05390 /* MultipeerController.swift */,
 				02879FAF24478B0300B05390 /* MultipeerHandler.swift */,
 				02D4177D244791DE000BC96A /* StringExtension.swift */,
+				0277CE1E2448E10700C01BDB /* CMData.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -291,6 +295,7 @@
 				0252BF862448D0030043DD0E /* MultipeerHandler.swift in Sources */,
 				0252BF872448D0030043DD0E /* StringExtension.swift in Sources */,
 				0252BF752448CFF70043DD0E /* AppDelegate.swift in Sources */,
+				0277CE202448E11500C01BDB /* CMData.swift in Sources */,
 				0252BF882448D0110043DD0E /* StatusLabel.swift in Sources */,
 				0252BF842448D0030043DD0E /* GlobalProperties.swift in Sources */,
 				0252BF852448D0030043DD0E /* MultipeerController.swift in Sources */,
@@ -304,6 +309,7 @@
 				02879F9D24478A3900B05390 /* ViewController.swift in Sources */,
 				02324048244799CD0022E3F2 /* MotionManager.swift in Sources */,
 				023240452447938A0022E3F2 /* StatusLabel.swift in Sources */,
+				0277CE1F2448E10700C01BDB /* CMData.swift in Sources */,
 				02879FB024478B0300B05390 /* MultipeerHandler.swift in Sources */,
 				02879F9924478A3900B05390 /* AppDelegate.swift in Sources */,
 				0232404C24479CA80022E3F2 /* ViewController + MotionHandler.swift in Sources */,

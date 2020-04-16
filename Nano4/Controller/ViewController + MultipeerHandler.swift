@@ -26,6 +26,7 @@ extension ViewController: MultipeerHandler {
         DispatchQueue.main.async {
             self.lblStatus.showMessage(id.displayName + " was found.".localized())
         }
+        host = id
         return true
     }
 
@@ -33,8 +34,5 @@ extension ViewController: MultipeerHandler {
         DispatchQueue.main.async {
             self.lblStatus.showMessage("Lost connection to ".localized() + id.displayName)
         }
-    }
-
-    func receivedData(_ data: Data, from peerID: MCPeerID) {
     }
 }
