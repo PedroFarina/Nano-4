@@ -37,6 +37,9 @@
 		02879FB224478B7500B05390 /* GlobalProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02879FB124478B7500B05390 /* GlobalProperties.swift */; };
 		029B1013244A4830003C9FD7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 029B1015244A4830003C9FD7 /* Localizable.strings */; };
 		029B1017244A493F003C9FD7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 029B1015244A4830003C9FD7 /* Localizable.strings */; };
+		029B101A244A4D1C003C9FD7 /* Catchim.sks in Resources */ = {isa = PBXBuildFile; fileRef = 029B1018244A4D1C003C9FD7 /* Catchim.sks */; };
+		029B101B244A4D1C003C9FD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 029B1019244A4D1C003C9FD7 /* Assets.xcassets */; };
+		029B101D244A4EE2003C9FD7 /* ViewController + ContactDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029B101C244A4EE2003C9FD7 /* ViewController + ContactDelegate.swift */; };
 		02D4177C24479101000BC96A /* ViewController + MultipeerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D4177B24479101000BC96A /* ViewController + MultipeerHandler.swift */; };
 		02D4177E244791DE000BC96A /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D4177D244791DE000BC96A /* StringExtension.swift */; };
 /* End PBXBuildFile section */
@@ -70,6 +73,9 @@
 		02879FB124478B7500B05390 /* GlobalProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalProperties.swift; sourceTree = "<group>"; };
 		029B1014244A4830003C9FD7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		029B1016244A4843003C9FD7 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		029B1018244A4D1C003C9FD7 /* Catchim.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Catchim.sks; sourceTree = "<group>"; };
+		029B1019244A4D1C003C9FD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		029B101C244A4EE2003C9FD7 /* ViewController + ContactDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController + ContactDelegate.swift"; sourceTree = "<group>"; };
 		02D4177B24479101000BC96A /* ViewController + MultipeerHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController + MultipeerHandler.swift"; sourceTree = "<group>"; };
 		02D4177D244791DE000BC96A /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -120,6 +126,8 @@
 				0252BF782448CFF70043DD0E /* Main.storyboard */,
 				026C41F6244935630065F64A /* MainScene.sks */,
 				026C41F8244A19250065F64A /* SwordNode.swift */,
+				029B1018244A4D1C003C9FD7 /* Catchim.sks */,
+				029B1019244A4D1C003C9FD7 /* Assets.xcassets */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -129,6 +137,7 @@
 			children = (
 				0252BF762448CFF70043DD0E /* ViewController.swift */,
 				0252BF8B2448D0F90043DD0E /* ViewController + MultipeerHandler.swift */,
+				029B101C244A4EE2003C9FD7 /* ViewController + ContactDelegate.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -280,8 +289,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				029B1013244A4830003C9FD7 /* Localizable.strings in Resources */,
+				029B101A244A4D1C003C9FD7 /* Catchim.sks in Resources */,
 				0252BF7F2448CFFC0043DD0E /* LaunchScreen.storyboard in Resources */,
 				0252BF7C2448CFFC0043DD0E /* Assets.xcassets in Resources */,
+				029B101B244A4D1C003C9FD7 /* Assets.xcassets in Resources */,
 				0252BF7A2448CFF70043DD0E /* Main.storyboard in Resources */,
 				026C41F7244935630065F64A /* MainScene.sks in Resources */,
 			);
@@ -306,6 +317,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0252BF8C2448D0F90043DD0E /* ViewController + MultipeerHandler.swift in Sources */,
+				029B101D244A4EE2003C9FD7 /* ViewController + ContactDelegate.swift in Sources */,
 				0252BF772448CFF70043DD0E /* ViewController.swift in Sources */,
 				0252BF862448D0030043DD0E /* MultipeerHandler.swift in Sources */,
 				026C41F9244A19250065F64A /* SwordNode.swift in Sources */,

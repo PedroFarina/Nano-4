@@ -25,6 +25,7 @@ class ViewController: UIViewController {
             lblStatus.showMessage("Scene not loaded!".localized())
             return
         }
+        scene.physicsWorld.contactDelegate = self
         lblStatus.showMessage("Connect up to two iPhone devices to have fun :)".localized())
         MultipeerController.shared().delegate = self
         spriteView.presentScene(scene)
