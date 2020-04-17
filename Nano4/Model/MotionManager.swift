@@ -20,36 +20,23 @@ public class MotionManager{
     
     private init(){
         motion = CMMotionManager()
-        if motion.isDeviceMotionActive {
-            motion.startDeviceMotionUpdates(using: .xMagneticNorthZVertical)
-        }
-        if motion.isAccelerometerAvailable {
-            motion.startAccelerometerUpdates()
+        if motion.isGyroAvailable {
+            motion.startGyroUpdates()
         }
         TimeInterval = 1/60
-        DispatchQueue.main.asyncAfter(deadline: .now() + TimeInterval) {
-            self.setOrigin()
-        }
     }
     private let motion:CMMotionManager
-
-    public var referenceAttitude: CMAttitude?
-    public func setOrigin() {
-        self.referenceAttitude = self.motion.deviceMotion?.attitude
-    }
 
     public var motionDelegate:MotionHandler?
     {
         didSet{
             if motionDelegate == nil{
-                motion.stopDeviceMotionUpdates()
-                motion.stopAccelerometerUpdates()
+                motion.stopGyroUpdates()
                 timer?.invalidate()
             }
             else{
-                if !motion.isDeviceMotionActive {
-                    motion.startDeviceMotionUpdates(using: .xMagneticNorthZVertical)
-                    motion.startAccelerometerUpdates()
+                if !motion.isGyroActive {
+                    motion.startGyroUpdates()
                     TimeInterval = 1/60
                 }
             }
@@ -66,27 +53,18 @@ public class MotionManager{
 
     public var TimeInterval:TimeInterval{
         get{
-            return motion.deviceMotionUpdateInterval
+            return motion.gyroUpdateInterval
         }
         set{
-            motion.deviceMotionUpdateInterval = newValue
-            motion.accelerometerUpdateInterval = newValue
-
+            motion.gyroUpdateInterval = newValue
             timer?.invalidate()
             timer = Timer(fire: Date(), interval: newValue, repeats: true, block: { (_) in self.getMotion() })
         }
     }
 
     private func getMotion() {
-        if let motionData = self.motion.deviceMotion,
-            let accData = self.motion.accelerometerData {
-
-            let relativeAttitude:CMAttitude = motionData.attitude
-            if let ref = self.referenceAttitude {
-                relativeAttitude.multiply(byInverseOf: ref)
-            }
-
-            self.motionDelegate?.update(attitude: relativeAttitude, acceleration: accData.acceleration, gravity: motionData.gravity)
+        if let gyroData = self.motion.gyroData {
+            self.motionDelegate?.update(rotation: gyroData.rotationRate)
         }
     }
 }

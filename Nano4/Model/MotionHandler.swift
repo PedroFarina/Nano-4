@@ -9,5 +9,5 @@
 import CoreMotion
 
 public protocol MotionHandler{
-    func update(attitude:CMAttitude, acceleration: CMAcceleration, gravity:CMAcceleration)
+    func update(rotation: CMRotationRate)
 }

@@ -19,6 +19,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <skView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YXg-hP-eBa">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                            </skView>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAi-Rm-rbJ" customClass="StatusLabel" customModule="Nano4TV" customModuleProvider="target">
                                 <rect key="frame" x="914" y="949" width="92" height="46"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -29,6 +32,10 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="YXg-hP-eBa" firstAttribute="centerY" secondItem="wu6-TO-1qx" secondAttribute="centerY" id="3z1-1H-GZQ"/>
+                            <constraint firstItem="YXg-hP-eBa" firstAttribute="centerX" secondItem="wu6-TO-1qx" secondAttribute="centerX" id="7W7-KN-ZcD"/>
+                            <constraint firstItem="YXg-hP-eBa" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="UBp-nm-fWJ"/>
+                            <constraint firstItem="YXg-hP-eBa" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="YJB-j8-cer"/>
                             <constraint firstItem="hAi-Rm-rbJ" firstAttribute="centerY" secondItem="wu6-TO-1qx" secondAttribute="centerY" multiplier="1.8" id="uH9-ZE-Mjb"/>
                             <constraint firstItem="hAi-Rm-rbJ" firstAttribute="centerX" secondItem="wu6-TO-1qx" secondAttribute="centerX" id="xno-Lt-BTg"/>
                         </constraints>
@@ -36,6 +43,7 @@
                     </view>
                     <connections>
                         <outlet property="lblStatus" destination="hAi-Rm-rbJ" id="W6o-Dx-yWU"/>
+                        <outlet property="spriteView" destination="YXg-hP-eBa" id="E6b-1T-5N9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
