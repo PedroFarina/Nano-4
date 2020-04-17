@@ -32,13 +32,16 @@ extension ViewController: MultipeerHandler {
         let value = data.withUnsafeBytes {
             $0.load(as: CMData.self)
         }
-        if firstPlayerSword.zRotation < -.pi/10 {
-            firstPlayerSword.position.x += 0.005
-        } else if firstPlayerSword.zRotation > .pi/10  {
-            firstPlayerSword.position.x -= 0.005
+        let zValue = firstPlayerSword.zRotation + CGFloat(value.z/100)
+        if zValue <= -.pi/15 {
+            firstPlayerSword.position.x += 0.007
+            firstPlayerSword.zRotation = -.pi/14
+        } else if zValue >= .pi/15 {
+            firstPlayerSword.position.x -= 0.007
+            firstPlayerSword.zRotation = .pi/14
+        } else {
+            firstPlayerSword.zRotation = zValue
         }
-        firstPlayerSword.zRotation += CGFloat(value.z/100)
-
 
     }
 }
