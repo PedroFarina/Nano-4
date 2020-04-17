@@ -14,20 +14,21 @@ class ViewController: UIViewController {
     @IBOutlet weak var spriteView: SKView!
     @IBOutlet weak var lblStatus: StatusLabel!
 
-    let scene: SKScene = SKScene()
+    let scene: SKScene? = SKScene(fileNamed: "MainScene.sks")
 
-    var firstPlayerSword: SKSpriteNode = SKSpriteNode(imageNamed: "Sword")
+    lazy var firstPlayerSword: SwordNode? = scene?.childNode(withName: "Sword1") as? SwordNode
+    lazy var secondPlayerSword: SwordNode? = scene?.childNode(withName: "Sword2") as? SwordNode
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        guard let scene = scene else {
+            lblStatus.showMessage("Scene not loaded!")
+            return
+        }
+        firstPlayerSword?.setup()
+        secondPlayerSword?.setup()
         MultipeerController.shared().delegate = self
-        scene.anchorPoint = CGPoint(x: 0.5, y: 0.5)
         spriteView.presentScene(scene)
-        spriteView.showsFPS = true
-        spriteView.showsNodeCount = true
-        firstPlayerSword.setScale(0.0014)
-        firstPlayerSword.position.x += 0.3
-        scene.addChild(firstPlayerSword)
     }
 
 

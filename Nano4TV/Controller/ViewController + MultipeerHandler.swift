@@ -14,7 +14,7 @@ extension ViewController: MultipeerHandler {
         DispatchQueue.main.async {
             self.lblStatus.showMessage(id.displayName + " is trying to join.".localized())
         }
-        return MultipeerController.shared().connectedPeers.isEmpty
+        return MultipeerController.shared().connectedPeers.count < 2
     }
 
     func peerJoined(_ id: MCPeerID) {
@@ -32,15 +32,18 @@ extension ViewController: MultipeerHandler {
         let value = data.withUnsafeBytes {
             $0.load(as: CMData.self)
         }
-        let zValue = firstPlayerSword.zRotation + CGFloat(value.z/100)
+        guard let sword = firstPlayerSword else {
+            return
+        }
+        let zValue = sword.zRotation + CGFloat(value.z/100)
         if zValue <= -.pi/15 {
-            firstPlayerSword.position.x += 0.007
-            firstPlayerSword.zRotation = -.pi/14
+            sword.physicsBody?.applyForce(CGVector(dx: 700, dy: 0))
+            sword.zRotation = -.pi/14
         } else if zValue >= .pi/15 {
-            firstPlayerSword.position.x -= 0.007
-            firstPlayerSword.zRotation = .pi/14
+            sword.physicsBody?.applyForce(CGVector(dx: -700, dy: 0))
+            sword.zRotation = .pi/14
         } else {
-            firstPlayerSword.zRotation = zValue
+            sword.zRotation = zValue
         }
 
     }

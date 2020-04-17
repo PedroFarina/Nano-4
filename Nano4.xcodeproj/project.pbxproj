@@ -23,6 +23,7 @@
 		0252BF882448D0110043DD0E /* StatusLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023240442447938A0022E3F2 /* StatusLabel.swift */; };
 		0252BF8C2448D0F90043DD0E /* ViewController + MultipeerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0252BF8B2448D0F90043DD0E /* ViewController + MultipeerHandler.swift */; };
 		026C41F7244935630065F64A /* MainScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 026C41F6244935630065F64A /* MainScene.sks */; };
+		026C41F9244A19250065F64A /* SwordNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026C41F8244A19250065F64A /* SwordNode.swift */; };
 		0277CE1F2448E10700C01BDB /* CMData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0277CE1E2448E10700C01BDB /* CMData.swift */; };
 		0277CE202448E11500C01BDB /* CMData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0277CE1E2448E10700C01BDB /* CMData.swift */; };
 		02879F9924478A3900B05390 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02879F9824478A3900B05390 /* AppDelegate.swift */; };
@@ -52,6 +53,7 @@
 		0252BF802448CFFC0043DD0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0252BF8B2448D0F90043DD0E /* ViewController + MultipeerHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController + MultipeerHandler.swift"; sourceTree = "<group>"; };
 		026C41F6244935630065F64A /* MainScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MainScene.sks; sourceTree = "<group>"; };
+		026C41F8244A19250065F64A /* SwordNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwordNode.swift; sourceTree = "<group>"; };
 		0277CE1E2448E10700C01BDB /* CMData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMData.swift; sourceTree = "<group>"; };
 		02879F9524478A3900B05390 /* Nano4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nano4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02879F9824478A3900B05390 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 			children = (
 				0252BF782448CFF70043DD0E /* Main.storyboard */,
 				026C41F6244935630065F64A /* MainScene.sks */,
+				026C41F8244A19250065F64A /* SwordNode.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 				0252BF8C2448D0F90043DD0E /* ViewController + MultipeerHandler.swift in Sources */,
 				0252BF772448CFF70043DD0E /* ViewController.swift in Sources */,
 				0252BF862448D0030043DD0E /* MultipeerHandler.swift in Sources */,
+				026C41F9244A19250065F64A /* SwordNode.swift in Sources */,
 				0252BF872448D0030043DD0E /* StringExtension.swift in Sources */,
 				0252BF752448CFF70043DD0E /* AppDelegate.swift in Sources */,
 				0277CE202448E11500C01BDB /* CMData.swift in Sources */,
