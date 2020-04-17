@@ -8,6 +8,7 @@
 
 import UIKit
 import SpriteKit
+import MultipeerConnectivity
 
 class ViewController: UIViewController {
 
@@ -16,8 +17,7 @@ class ViewController: UIViewController {
 
     let scene: SKScene? = SKScene(fileNamed: "MainScene.sks")
 
-    lazy var firstPlayerSword: SwordNode? = scene?.childNode(withName: "Sword1") as? SwordNode
-    lazy var secondPlayerSword: SwordNode? = scene?.childNode(withName: "Sword2") as? SwordNode
+    var players:[MCPeerID: SwordNode] = [:]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,8 +25,6 @@ class ViewController: UIViewController {
             lblStatus.showMessage("Scene not loaded!")
             return
         }
-        firstPlayerSword?.setup()
-        secondPlayerSword?.setup()
         MultipeerController.shared().delegate = self
         spriteView.presentScene(scene)
     }

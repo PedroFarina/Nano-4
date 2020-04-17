@@ -18,6 +18,15 @@ extension ViewController: MultipeerHandler {
     }
 
     func peerJoined(_ id: MCPeerID) {
+        guard let sword = scene?.childNode(withName: "Sword\(MultipeerController.shared().connectedPeers.count)") as? SwordNode else {
+            DispatchQueue.main.async {
+                self.lblStatus.showMessage("Scene not loaded!")
+            }
+            return
+        }
+        sword.setup()
+        players[id] = sword
+
         DispatchQueue.main.async {
             self.lblStatus.showMessage(id.displayName + " has connected.".localized())
         }
@@ -32,7 +41,8 @@ extension ViewController: MultipeerHandler {
         let value = data.withUnsafeBytes {
             $0.load(as: CMData.self)
         }
-        guard let sword = firstPlayerSword else {
+        
+        guard let sword = players[peerID] else {
             return
         }
         let zValue = sword.zRotation + CGFloat(value.z/100)
