@@ -20,7 +20,7 @@ extension ViewController: MultipeerHandler {
     func peerJoined(_ id: MCPeerID) {
         guard let sword = scene?.childNode(withName: "Sword\(MultipeerController.shared().connectedPeers.count)") as? SwordNode else {
             DispatchQueue.main.async {
-                self.lblStatus.showMessage("Scene not loaded!")
+                self.lblStatus.showMessage("Scene not loaded!".localized())
             }
             return
         }

@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        lblStatus.showMessage("Connect to an AppleTV to begin your fun!".localized())
         MultipeerController.shared().delegate = self
         MotionManager.shared().motionDelegate = self
     }

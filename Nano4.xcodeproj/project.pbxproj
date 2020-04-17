@@ -35,6 +35,8 @@
 		02879FAE24478AE400B05390 /* MultipeerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02879FAD24478AE400B05390 /* MultipeerController.swift */; };
 		02879FB024478B0300B05390 /* MultipeerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02879FAF24478B0300B05390 /* MultipeerHandler.swift */; };
 		02879FB224478B7500B05390 /* GlobalProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02879FB124478B7500B05390 /* GlobalProperties.swift */; };
+		029B1013244A4830003C9FD7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 029B1015244A4830003C9FD7 /* Localizable.strings */; };
+		029B1017244A493F003C9FD7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 029B1015244A4830003C9FD7 /* Localizable.strings */; };
 		02D4177C24479101000BC96A /* ViewController + MultipeerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D4177B24479101000BC96A /* ViewController + MultipeerHandler.swift */; };
 		02D4177E244791DE000BC96A /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D4177D244791DE000BC96A /* StringExtension.swift */; };
 /* End PBXBuildFile section */
@@ -66,6 +68,8 @@
 		02879FAD24478AE400B05390 /* MultipeerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipeerController.swift; sourceTree = "<group>"; };
 		02879FAF24478B0300B05390 /* MultipeerHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipeerHandler.swift; sourceTree = "<group>"; };
 		02879FB124478B7500B05390 /* GlobalProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalProperties.swift; sourceTree = "<group>"; };
+		029B1014244A4830003C9FD7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		029B1016244A4843003C9FD7 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		02D4177B24479101000BC96A /* ViewController + MultipeerHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController + MultipeerHandler.swift"; sourceTree = "<group>"; };
 		02D4177D244791DE000BC96A /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -172,6 +176,7 @@
 				02879FAF24478B0300B05390 /* MultipeerHandler.swift */,
 				02D4177D244791DE000BC96A /* StringExtension.swift */,
 				0277CE1E2448E10700C01BDB /* CMData.swift */,
+				029B1015244A4830003C9FD7 /* Localizable.strings */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -256,6 +261,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = 02879F8C24478A3900B05390;
 			productRefGroup = 02879F9624478A3900B05390 /* Products */;
@@ -273,6 +279,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				029B1013244A4830003C9FD7 /* Localizable.strings in Resources */,
 				0252BF7F2448CFFC0043DD0E /* LaunchScreen.storyboard in Resources */,
 				0252BF7C2448CFFC0043DD0E /* Assets.xcassets in Resources */,
 				0252BF7A2448CFF70043DD0E /* Main.storyboard in Resources */,
@@ -285,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				02879FA524478A3B00B05390 /* LaunchScreen.storyboard in Resources */,
+				029B1017244A493F003C9FD7 /* Localizable.strings in Resources */,
 				02879FA224478A3B00B05390 /* Assets.xcassets in Resources */,
 				02879FA024478A3900B05390 /* Main.storyboard in Resources */,
 			);
@@ -365,6 +373,15 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		029B1015244A4830003C9FD7 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				029B1014244A4830003C9FD7 /* en */,
+				029B1016244A4843003C9FD7 /* pt-BR */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -412,6 +429,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -472,6 +490,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
