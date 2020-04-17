@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  Nano4
+
+  Created by Pedro Giuliano Farina on 17/04/20.
+  Copyright © 2020 Pedro Giuliano Farina. All rights reserved.
+*/
+
+"Connect to an AppleTV to begin your fun!" = "Connect to an AppleTV to begin your fun!";
+"Connect up to two iPhone devices to have fun :)" = "Connect up to two iPhone devices to have fun :)";
+" has connected." = " has connected.";
+" has disconnected." = " has disconnected.";
+" was found." = " was found.";
+"Lost connection to " = "Lost connection to ";
+"Scene not loaded!" = "Scene not loaded!";
+" is trying to join." = " is trying to join.";
